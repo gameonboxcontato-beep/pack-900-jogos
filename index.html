@@ -72,20 +72,27 @@
 
     /* GRID DE JOGOS */
     .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.games::-webkit-scrollbar {
+  height: 6px;
+}
+
+.games::-webkit-scrollbar-thumb {
+  background: #9333ea;
+  border-radius: 10px;
+}
 
     .game-card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 15px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
+  min-width: 160px;
+  scroll-snap-align: start;
+}
 
     .game-card:hover {
       transform: scale(1.05);
