@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOBOX</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('img/BG.png') center/cover no-repeat fixed;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+    }
+
+    header img {
+      width: 220px;
+      max-width: 80%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      background: linear-gradient(90deg, #a855f7, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      text-align: left;
+    }
+
+    h2 { color: #c084fc; }
+
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: bold;
+      background: linear-gradient(90deg, #9333ea, #06b6d4);
+      color: white;
+      box-shadow: 0 0 20px rgba(147,51,234,0.6);
+    }
+
+    .center { text-align: center; }
+
+    /* GRID DE JOGOS */
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .game-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      transition: 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(138,43,226,0.4);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .game-title {
+      padding: 10px;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  
+
+    .steps {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .steps li {
+      position: relative;
+      padding-left: 25px;
+      margin: 12px 0;
+    }
+
+    .steps li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #c084fc;
+      font-size: 1.2rem;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<header>
+  <img src="img/Logo-GOBOX-Trans.png" alt="GOBOX Logo">
+  <p>Mais de 900 jogos na sua Steam em minutos</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>O que você recebe</h2>
+    <ul>
+      <li>Jogos Originais</li>
+      <li>Não é conta compartilhada</li>
+      <li>+900 Jogos na sua biblioteca Steam</li>
+      <li>Não são Keys</li>
+      <li>Garantia de 7 dias</li>
+    </ul>
+<br>
+    <h2>Em 2 min</h2>
+    <p>Em menos de 2 minutos você já estará com mais de 900 jogos disponíveis na sua conta Steam.</p>
+  </div>
+
+  <div class="card">
+    <h2>Titulos Famosos:</h2>
+
+    <div class="games">
+
+      <div class="game-card">
+        <img src="img/Forza.jpg">
+        <div class="game-title">Forza Horizon 5</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/God.jpg">
+        <div class="game-title">God of War</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Resident.jpg">
+        <div class="game-title">The Last of Us I e II</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Hogwarts.png">
+        <div class="game-title">Hogwarts Legacy</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Resident.jpg">
+        <div class="game-title">Resident Evil 4</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Requiem.jpg">
+        <div class="game-title">Resident Evil Requiem</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Red.png">
+        <div class="game-title">Red Dead I e II</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Spider.jpg">
+        <div class="game-title">Spiderman</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Death.jpg">
+        <div class="game-title">Death Stranding I e II</div>
+      </div>
+
+      <div class="game-card">
+        <img src="img/Cyber.png">
+        <div class="game-title">Cyberpunk</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Como funciona</h2>
+    <ul>
+      <li>Você realiza o pagamento pela plataforma Cakto</li>
+      <li>Recebe acesso imediato à área do cliente</li>
+      <li>Assiste ao vídeo de apresentação</li>
+      <li>Segue o vídeo de instalação passo a passo</li>
+      <li>Após instalar, sua Steam já abre com +1400 jogos</li>
+    </ul>
+  </div>
+
+ <div class="card center">
+  <h2>Garantia</h2>
+  <p>Optamos pela Cakto pois ela garante a sua satisfação. Você tem direito a 7 dias de garantia incondicional, sem depender de nós para autorizar.</p>
+<br>
+  <h2 style="margin-top:25px;">Desbloqueie agora os +1400 jogos</h2>
+  <a class="btn" href="https://pay.cakto.com.br/334nidp_808279" target="_blank">Desbloquear agora</a>
+</div>
+
+</div>
+
+<footer>
+  <p>© 2026 GOBOX</p>
+</footer>
+
+</body>
+</html>
